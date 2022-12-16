@@ -1,14 +1,11 @@
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the factorial of a number n</title>
 </head>
 <body>
     
     <input type="number"id="num"value=""placeholder="Enter a number" />
+    <p id="para"></p>
     <input type="button" id="btn_fact" value="Factorial" />
     <script>
         document.getElementById("btn_fact").addEventListener("click",fact);
@@ -18,7 +15,7 @@
             for(var i =num;i>0;i--){
                 res *=i;
             }
-            alert(res);
+            document.getElementById("para").innerHTML="Factorial is : "+res;
         }
     </script>
 </body>

@@ -1,8 +1,6 @@
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print a table of numbers from 5 to 15 and their squares and cubes using alert.</title>
 
 </head>
@@ -14,7 +12,7 @@
     document.getElementById("btn_alert").addEventListener("click",alertIt);
     function alertIt(){
         var result ="";
-        for(var i = 5;i<15;i++){
+        for(var i = 5;i<=15;i++){
             result+= i +" "+i*i+" "+i*i*i +"\n";
         }
         alert(result);
