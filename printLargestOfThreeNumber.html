@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print the largest of three numbers</title>
+  </head>
+  <body>
+    <input type="number"id="number1"value=""placeholder="Enter first number" />
+    <input type="number"id="number2"value=""placeholder="Enter second number"/>
+    <input type="number"id="number3"value=""placeholder="Enter third number"/>
+    <input type="button" id="btn_compare" value="Compare" />
+    <script>
+      document.getElementById("btn_compare").addEventListener("click", compare);
+      function compare() {
+        
+        let largest;
+        var x = parseFloat(document.getElementById("number1").value);
+        var y = parseFloat(document.getElementById("number2").value);
+        var z = parseFloat(document.getElementById("number3").value);
+
+        if (x > y && x > z) largest = x;
+        else if (z > x && z > y) largest = z;
+        else largest = y;
+        alert(largest);
+      }
+    </script>
+  </body>
+</html>

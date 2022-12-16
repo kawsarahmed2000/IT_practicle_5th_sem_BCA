@@ -1,0 +1,34 @@
+
+<html lang="en">
+<head>
+    <title>Read n numbers. Count the number of negative numbers, positive numbers and zeros in the
+list.</title>
+</head>
+<body>
+    <input type="text"id="num"value=""placeholder="Enter number list" />
+    <input type="button" id="btn_calc" value="Calculate" />
+    <p id="para"></p>
+    <script>
+
+        document.getElementById("btn_calc").addEventListener("click",cal);
+        function cal(){
+            var n = document.getElementById("num").value;
+            var ns=n.split(',');
+            var positive =0,negative=0,zeros=0;
+            ns.forEach(i => {
+                if(i==0){
+                    zeros++;
+                }else if(i>0){
+                    positive++;
+                }else{
+                    negative++;
+                }
+            });
+            document.getElementById("para").innerHTML="Positive numbers: "+positive+
+            ", Negative numbers: "+negative+", Zeros: "+zeros;
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter a list of positive numbers terminated by Zero. Find the sum and average of these
+numbers.</title>
+</head>
+<body>
+    
+    <input type="number"id="num"value=""placeholder="Enter length" />
+    <input type="button" id="btn_calc" value="Calculate" />
+    <p id="para"></p>
+</body>
+<script>
+        document.getElementById("btn_calc").addEventListener("click",cal);
+        function cal(){
+            var k=0;s=0;
+            var n = parseInt(document.getElementById("num").value);
+            for(var i=10;i<n;i+=10){
+                k++
+                s+=i;
+                avg = s/k;
+            }
+            document.getElementById("para").innerHTML="Sum is "+s+" and average is "+avg
+            console.log("Sum is "+s+" and avg is "+avg);
+        }
+        </script>
+</html>

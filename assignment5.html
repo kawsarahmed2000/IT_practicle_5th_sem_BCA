@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A person deposits Rs 1000 in a fixed account yielding 5% interest. Compute the amount in the
+account at the end of each year for n years.</title>
+</head>
+<body>
+    <input type="number"id="num"value=""placeholder="Enter year" />
+    <input type="button" id="btn_calc" value="Calculate" />
+    <p id="para"></p>
+    <script>
+        document.getElementById("btn_calc").addEventListener("click",cal);
+        function cal(){
+            var amount=1000,rate=5,total=0;
+            var n = parseInt(document.getElementById("num").value);
+            total=amount+amount*(rate/100)*n;
+            document.getElementById("para").innerHTML="Total amount will be "+total;
+        }
+
+    </script>
+</body>
+</html>
