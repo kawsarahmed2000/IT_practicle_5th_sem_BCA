@@ -11,4 +11,4 @@ account at the end of each year for n years.
 6. Read n numbers. Count the number of negative numbers, positive numbers and zeros in the
 list.
 <br>
-<a href="https://github.com/kawsarahmed2000/IT_practicle_5th_sem_BCA/blob/main/IT_practicle.pdf"><b>Practicle pdf</b></a>
+<a href="https://github.com/kawsarahmed2000/IT_practicle_5th_sem_BCA/raw/main/IT_practicle.pdf"><b>Practicle pdf</b></a>
